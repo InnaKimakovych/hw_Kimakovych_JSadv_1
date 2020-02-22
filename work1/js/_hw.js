@@ -1,6 +1,5 @@
 ﻿var elemHigh;
-
-		function highlightFirst(){
+function highlightFirst(){
       var a = document.getElementById("myList").children;
       if (elemHigh != undefined){
         elemHigh.style.color = 'black';
@@ -9,7 +8,7 @@
       elemHigh.style.color = 'red';
     };
 
-    function highlightLast(){
+function highlightLast(){
       var a = document.getElementById("myList").children;
       if (elemHigh != undefined){
         elemHigh.style.color = 'black';
@@ -18,7 +17,7 @@
       elemHigh.style.color = 'red';
     };
 
-    function highlightNext(){
+function highlightNext(){
       var a = document.getElementById("myList").children;
       if (elemHigh != undefined){
         elemHigh.style.color = 'black';
@@ -30,7 +29,7 @@
       elemHigh.style.color = 'red';
     };
 
-    function highlightPrev(){
+function highlightPrev(){
       var a = document.getElementById("myList").children;
       if (elemHigh != undefined){
         elemHigh.style.color = 'black';
@@ -41,21 +40,20 @@
       elemHigh.style.color = 'red';
     };
 
-
-		function append() {
+function append() {
       var newItem = document.createElement("li");
       newItem.innerHTML = 'следующий пункт';
       document.getElementById("myList").appendChild(newItem);         
     };
 
-		function remove() {
+function remove() {
       var child = document.getElementById("myList");
       var oneChild = child.lastChild;
       child.removeChild(oneChild);         
     };
 
-    function appendOnTop() {
-      var newItem = document.createElement("li");
-      newItem.innerHTML = 'предыдущий пункт';
-      document.getElementById("myList").insertBefore(newItem, document.getElementById("myList").childNodes[0]);         
+function appendOnTop() {
+	var newItem = document.createElement("li");
+	newItem.innerHTML = 'предыдущий пункт';
+	document.getElementById("myList").insertBefore(newItem, document.getElementById("myList").childNodes[0]);         
     };
