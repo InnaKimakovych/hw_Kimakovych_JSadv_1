@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Выделить первый элемент+ -->
+<!-- Выделить последний элемент+ -->
+<!-- Выделить следующий элемент -->
+<!-- Выделить предыдущий элемент -->
+<!-- Добавить элемент+ -->
+<!-- Удалить элемент+ -->
+<!-- Добавить в начало+ -->
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<ul id="myList">
+  	<li id="item1">пункт 1</li>
+  	<li id="item2">пункт 2</li>
+  	<li id="item3">пункт 3</li>
+  	<li id="item4">пункт 4</li>
+  	<li id="item5">пункт 5</li>
+	</ul>
+  
+  <input type="button" value="Выделить первый элемент" onclick="highlightFirst()"/>		
+  <input type="button" value="Выделить последний елемент" onclick="highlightLast()"/>		
+  <input type="button" value="Выделить предыдущий элемент" onclick="highlightPrev()"/>   
+  <input type="button" value="Выделить следующий элемент" onclick="highlightNext()"/>   
+  <input type="button" value="Добавить" onclick="append()"/>	
+	<input type="button" value="Удалить последний элемент" onclick="remove()"/>	
+	<input type="button" value="Добавить в начало" onclick="appendOnTop()"/>
+
+  <script type="text/javascript" src="js/_hw.js" charset="UTF-8"></script>
+</body>
+</html>
